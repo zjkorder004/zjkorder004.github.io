@@ -97,7 +97,7 @@
 .borderradius15{border-radius: 24px;-moz-border-radius: 24px;-webkit-border-radius: 24px;}
 
 .topbar{height: 60px;line-height: 60px;}
-.banner-bg{background:url(../images/banner.jpg) scroll center center;background-size: cover;height:130px;margin-top: 60px}
+.banner-bg{background:url(../img/banner.jpg) scroll center center;background-size: cover;height:130px;margin-top: 60px}
 .line130{line-height:130px}
 .regis-btn{width:100%}
 .clearfix:after {
@@ -116,7 +116,7 @@
 .industries-box ul li a{background-color:#e9edee;width:274px;height:238px;border:1px solid #dbe5e8;display:block;color:#666}
 .industries-box ul li a:hover{background-color:#2ea5de;border-color:#2b9dd4;text-decoration: none;color:#fff}
 .industries-box ul li a h3{margin-top:30px;margin-bottom: 30px;}
-.industries-box ul li a span{background:url(../images/industry-img.png) no-repeat center center;width:160px;height:116px;display:block;clear:both;margin-left:57px}
+.industries-box ul li a span{background:url(../img/industry-img.png) no-repeat center center;width:160px;height:116px;display:block;clear:both;margin-left:57px}
 .industries-box ul li a span[class="indu-img1"]{background-position:0px 0px}
 .industries-box ul li a span[class="indu-img2"]{background-position:-161px 0px}
 .industries-box ul li a span[class="indu-img3"]{background-position:-322px 0px}
@@ -134,10 +134,10 @@
 .charact-box ul li a{background-color:#e9edee;width:281px;height:360px;display:block;color:#78888f;padding-top: 26px;}
 .charact-box ul li a:hover{background-color:#ffad01;border-color:#2b9dd4;text-decoration: none;color:#fff}
 .charact-box ul li a h3{margin-top:30px;margin-bottom: 30px;}
-.charact-box ul li a span{background:url(../images/charact-img.png) no-repeat center center;width:125px;height:135px;display:block;clear:both;margin-left:78px;margin-bottom: 10px;}
+.charact-box ul li a span{background:url(../img/charact-img.png) no-repeat center center;width:125px;height:135px;display:block;clear:both;margin-left:78px;margin-bottom: 10px;}
 .charact-box ul li a label{display:block;font-size: 18px;margin-bottom:22px}
 .charact-box ul li a b{display:block;font-size: 15px;font-weight:normal;padding-left:25px;padding-right:25px;padding-top:22px;background:url(../images/linebg2.png) no-repeat center top;}
-.charact-box ul li a:hover > b{background:url(../images/linebg1.png) no-repeat center top;}
+.charact-box ul li a:hover > b{background:url(../img/linebg1.png) no-repeat center top;}
 
 .charact-box ul li a > span[class="char-img1"]{background-position:0px 0px}
 .charact-box ul li a > span[class="char-img2"]{background-position:0px -126px}
