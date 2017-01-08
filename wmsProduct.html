@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <title>WMS仓储管理系统</title>
+    <meta charset="UTF-8">
+    <!--描述，作者，favicon.ico需要留-->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--引入css文件,bootstrap.css放在前面,common.css公用css文件，XXX.css当前页面需要的组件css，common.css和XXX.css中可以覆盖重写bootstra.css里的样式-->
+    <link rel="stylesheet" href="framework/css/bootstrap.css"/>
+    <link rel="stylesheet" href="framework/css/common.css"/>
+    <link rel="stylesheet" href="framework/css/index.css"/>
+</head>
+<body>
+<!--导航 navigation-->
+<div id="accordion" class="index-nav navbar navbar-inverse navbar-fixed-top bor0 panel-group shadowNav">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">xiao lv</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand hidden-sm" href="index.html">
+                <img src="framework/img/logo.png?v=1480401640898" alt="">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse" role="navigation" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav">
+                <li class="dropdown" id="navProduct" href="#collapseOne">
+                    <a class=" f18 cf afix">
+                        产品
+                        <b class="caret"></b>
+                    </a>
+                    <div id="collapseOne" class="panel-collapse collapse bgf borderLB"
+                         style="position: fixed;top: 60px;left: 0;right: 0;">
+                        <div class="row">
+                            <div class="container">
+                                <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                                    <ul class="disL">
+                                        <li class="f-l mgT30 mgB30"><a href="wmsProduct.html" class="f16 c6"><i
+                                                class="icon icon-dot "></i>WMS仓储管理系统</a></li>
+                                        <li class="f-l mgT30 mgB30 mgL50"><a href="#" class="f16 c6"><i
+                                                class="icon icon-dot "></i>TMS运输管理系统</a></li>
+                                        <li class="f-l mgT30 mgB30 mgL50"><a href="#" class="f16 c6"><i
+                                                class="icon icon-dot "></i>OMS订单管理系统</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown" id="navService" href="#collapseThree">
+                    <a class=" f18 cf afix">
+                        服务
+                        <b class="caret"></b>
+                    </a>
+                    <div id="collapseThree" class="panel-collapse collapse  bgf borderLB"
+                         style="position: fixed;top: 60px;left: 0;right: 0;">
+                        <div class="row">
+                            <div class="container">
+                                <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                                    <ul class="disL">
+                                        <li class="f-l mgT30 mgB30"><a href="#" class="f16 c6"><i
+                                                class="icon icon-dot"></i>仓储管理咨询与实施</a></li>
+                                        <li class="f-l mgT30 mgB30 mgL50"><a href="#" class="f16 c6"><i
+                                                class="icon icon-dot "></i>仓配一体化咨询与实施</a></li>
+                                        <li class="f-l mgT30 mgB30 mgL50"><a href="#" class="f16 c6"><i
+                                                class="icon icon-dot "></i>企业及门户管理定制服务</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown" id="navNews" href="#collapseFour">
+                    <a class=" f18 c3 afix">
+                        新闻动态
+                        <b class="caret"></b>
+                    </a>
+                    <div id="collapseFour" class="panel-collapse collapse  bgf borderLB"
+                         style="position: fixed;top: 60px;left: 0;right: 0;">
+                        <div class="row">
+                            <div class="container">
+                                <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                                    <ul class="disL">
+                                        <li class="f-l mgT30 mgB30"><a
+                                                href="#"
+                                                class="f16 c6"><i class="icon icon-dot"></i>行业资讯</a></li>
+                                        <li class="f-l mgT30 mgB30 mgL50"><a
+                                                href="#"
+                                                class="f16 c6"><i class="icon icon-dot "></i>小驴新闻</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="aboutUs.html" class="f18 c3 afix">关于小驴</a></li>
+                <li class="dropdown"  href="#collapseFive">
+                    <a class=" f18 c3 afix">
+                        战略合作
+                        <b class="caret"></b>
+                    </a>
+                    <div id="collapseFive" class="panel-collapse collapse  bgf borderLB"
+                         style="position: fixed;top: 60px;left: 0;right: 0;">
+                        <div class="row">
+                            <div class="container">
+                                <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                                    <ul class="disL">
+                                        <li class="f-l mgT30 mgB30"><a
+                                                href="cooperate.html"
+                                                class="f16 c6"><i class="icon icon-dot"></i>合作方式</a></li>
+                                        <li class="f-l mgT30 mgB30 mgL50"><a
+                                                href="contact.html"
+                                                class="f16 c6"><i class="icon icon-dot "></i>联系方式</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container-fuld banner-bg">
+    <div class="container">
+        <h1 class="line130">WMS仓储管理系统</h1>
+    </div>
+</div>
+
+<div class="container">
+    <!-- 此处按需加载用或不用bootstrap分栏的这种布局。divname-left,divname-center,divname-left是对div的命名divname在前，位置在后，中间用-连接-->
+    <div class="mt30 mb30 text-right">
+        <button onclick="toLoginPage();" type="button" class="btn btn-lg btn-success borderradius15"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 登录</button>
+        <button onclick="toRegestPage();" type="button" class="btn btn-lg btn-info borderradius15"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 注册</button>
+        <button onclick="toResExperiencePage();" type="button" class="btn btn-lg btn-warning borderradius15"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 预约演示</button>
+
+    </div>
+    <div class="four-industries text-center clearfix mb80">
+        <h2 class="mb20">适用于四大行业</h2>
+        <h4 class="mb30">电商平台、传统供应链、冷链仓配、快递物流全行业应用</h4>
+        <div class="industries-box">
+            <ul>
+                <li>
+                    <a href="javascrip:void(0)">
+                        <h3>电商平台仓储业务</h3>
+                        <span class="indu-img1"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">
+                        <h3>传统供应链仓储业务</h3>
+                        <span class="indu-img2"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">
+                        <h3>冷链仓配一体化业务</h3>
+                        <span class="indu-img3"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">
+                        <h3>快递物流仓储业务</h3>
+                        <span class="indu-img4"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="four-industries clearfix mb80">
+        <h2 class="mb20 text-center">产品特色</h2>
+        <h4 class="mb45 text-center">欧电云WMS是国内领先的一站式运输服务平台，带给客户全新管理体验，创造更多商业机会</h4>
+        <div class="row">
+            <div class="col-sm-12 mb180">
+                <div class="col-md-8 pl0"><img src="wms/framework/images/tp1.png"></div>
+                <div class="col-md-4 pr0">
+                    <span class="fontbold font18 displayBlock mb10 mt30">基于云计算</span>
+                    <span class="font16 displayBlock">只需注册一个企业用户即可使用。也可根据自身需求，部署成私有云，企业独享个性化服务。</span>
+                </div>
+            </div>
+            <div class="col-sm-12 mb180">
+                <div class="col-md-5 pl0">
+                    <span class="fontbold font18 displayBlock mb10 mt30">人性化管理</span>
+                    <span class="font16 displayBlock">管理随时随地，作业便捷高效！ 系统同时支持网页、电脑客户端、平板客户端及手持客户端等多种终端形态，适用于不同作业需求。</span></div>
+                <div class="col-md-7 pr0 text-right">
+                    <img src="wms/framework/images/tp2.png">
+                </div>
+            </div>
+            <div class="col-sm-12 mb180">
+                <div class="col-md-7 pl0"><img src="wms/framework/images/tp3.png"></div>
+                <div class="col-md-5 pr0">
+                    <span class="fontbold font18 displayBlock mb10 mt30">Web、PDA、APP多模式操作</span>
+                    <span class="font16 displayBlock">提供Web、PDA、APP等多种业务应用，充分满足桌面、现场、移动作业需要。</span>
+                </div>
+            </div>
+            <div class="col-sm-12 mb180">
+                <div class="col-md-6 pl0">
+                    <span class="fontbold font18 displayBlock mb10 mt30">支持多语言版</span>
+                    <span class="font16 displayBlock">可通过语言包发布形式快速部署包括中文、英文、日文等多种语言版本</span></div>
+                <div class="col-md-6 pr0 text-right">
+                    <img src="wms/framework/images/tp4.png">
+                </div>
+            </div>
+        </div>
+        <div class="charact-box">
+            <ul>
+                <li>
+                    <a href="javascrip:void(0)">
+                        <span class="char-img1"></span>
+                        <label>高性能技术处理引擎</label>
+                        <b>采用多级缓存、高速队列处理技术，支持多租户高并发、海量数据处理需求</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">
+                        <span class="char-img2"></span>
+                        <label>高度可配置</label>
+                        <b>通过对基础数据、作业规则、流程配置等多重可配置策略处理，实现不同行业、不同仓储、不同货主的个性化需求</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">
+                        <span class="char-img3"></span>
+                        <label>支持多领域业务模式协作业务</label>
+                        <b>一套系统，可支持多领域多业务操作模式，无需额外的投入，即可兼顾B2B、B2C、OTO等多种作业需求</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">
+                        <span class="char-img4"></span>
+                        <label>共享价值</label>
+                        <b>各企业、组织、仓库、货主、供应商、收货人在同一平台操作，形成一体化作业环境，共享信息与安全</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">
+                        <span class="char-img5"></span>
+                        <label>多级库存维度精细化管理</label>
+                        <b>支持企业、仓库、货主、供应商、货品五项基本维度和无限条可扩展自定义批次属性，最大化满足各种精细化库存管理业务需要
+                        </b>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">
+                        <span class="char-img6"></span>
+                        <label>双重批次管理</label>
+                        <b>采用货品批次与入库批次双重批次处理机制，先按货品批次顺序后按入库批次的先进先出机制执行库存分配</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">
+                        <span class="char-img7"></span>
+                        <label>智能策略及算法优化</label>
+                        <b>根据配置策略进行智能化解析和优化算法，可适应不同作业场景，降低人为操作依赖，提升作业准确率</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascrip:void(0)">
+                        <span class="char-img8"></span>
+                        <label>电子面单定制化打印</label>
+                        <b>通过在线打印电子面单，指导现场作业。电子面单可通过与各系统对接进来</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="media">
+                    <div class="media-left">
+                        <span class="tool-img1"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading fontbold mb10">稳定安全</h4>
+                        <p>多重嵌套加密机制，智能计算渠道权重，自动分发；丢失率低、完美到达，强大的监控防护系统</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="media">
+                    <div class="media-left">
+                        <span class="tool-img2"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading fontbold mb10">极致高效</h4>
+                        <p>云平台接入、无需软硬件资源、即插即用；提供开放接口、支持定制化开发，低费效、高到达</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="media">
+                    <div class="media-left">
+                        <span class="tool-img3"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading fontbold mb10">人性服务</h4>
+                        <p>一对一服务，全天候待命，清晰的帮助指南并有专人指导；针对性的服务套餐设计快速响应迭代，根据客户需求定制</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fuld text-center bottom font16 colorg">© 2016 上海欧电云信息科技有限公司   丨   沪ICP备：15035713号</div>
+
+<div class="customerService" >
+    <i class="icon icon-customer mgT5"></i>
+    <span class="f20 cf2 mgT5">联系客服</span>
+</div>
+<div class="customerServiceShow">
+    <ul>
+        <li class="radiusTopLeft5 broadside">
+            <a href="#" class="f16 cf disb" onclick="NTKF.im_openInPageChat()"><i class="icon icon-talk mgT20"></i>
+                <br>在线客服</a>
+        </li>
+        <li class="radiusBottomLeft5 broadside">
+            <a href="mailto:Marketing2@odianyun.com" class="f16 cf disb"><i class="icon icon-mail mgT20"></i><br>联系我们</a>
+        </li>
+    </ul>
+</div>
+<script src="framework/js/jquery.js"></script>
+<!--<script src="wms/plug/bootstrap/js/bootstrap.min.js"></script>-->
+<script src="framework/js/index.js"></script>
+<script src="framework/js/bdSide.js"></script>
+<script type="text/javascript">
+    var NTKF_PARAM = {
+        "siteid": "kf_9357" /*网站siteid*/,
+        "settingid": "kf_9357_1469516773021" /*代码ID*/,
+        "uid": "" /*会员ID*/,
+        "uname": ""/*会员名*/,
+        "userlevel": "0"/*会员等级*/
+    }
+</script>
+<script type="text/javascript" src="http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9357" charset="utf-8"></script>
+<!--<script src="wms/p/js/jquery-1.11.3.min.js"></script>-->
+
+</body>
+</html>
